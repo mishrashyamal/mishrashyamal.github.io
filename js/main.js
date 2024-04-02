@@ -312,3 +312,31 @@
 
 }());
 
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the form from submitting normally
+
+    // Get form data
+    var formData = new FormData(this);
+
+    // Make a POST request to the Versal backend
+    fetch('https://backend-portfolio-phi-seven.vercel.app/send_email', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => {
+        if (response.ok) {
+            return response.json();
+        } else {
+            throw new Error('Failed to send email');
+        }
+    })
+    .then(data => {
+        // Handle successful response
+        alert('Email sent successfully!');
+    })
+    .catch(error => {
+        // Handle error
+        console.error('Error:', error);
+        alert('Failed to send email. Please try again later.');
+    });
+});
