@@ -322,7 +322,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     const message = document.querySelector('#message').value;
 
     // Send data to AWS Lambda function
-    fetch('https://your-lambda-api-endpoint', {
+    fetch('https://buwfm4rs3c.execute-api.us-east-1.amazonaws.com/default/HandleFormSubmission', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
