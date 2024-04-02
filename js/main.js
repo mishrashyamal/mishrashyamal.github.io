@@ -313,41 +313,27 @@
 }());
 
 document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent the default form submission
+    event.preventDefault();
 
-    // Get form data
-    const name = document.querySelector('#contactForm input[name="name"]').value;
-    const email = document.querySelector('#contactForm input[name="email"]').value;
-    const subject = document.querySelector('#contactForm input[name="subject"]').value;
-    const message = document.querySelector('#message').value;
+    var formData = new FormData(this);
 
-    // Send data to AWS Lambda function
-    fetch('https://buwfm4rs3c.execute-api.us-east-1.amazonaws.com/default/HandleFormSubmission', {
+    fetch('/api/submitForm', {
         method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-            name: name,
-            email: email,
-            subject: subject,
-            message: message
-        })
+        body: formData
     })
     .then(response => {
         if (response.ok) {
-            console.log('Form data submitted successfully');
-            // Optionally, display a success message or redirect the user
+            alert('Message sent successfully!');
+            // Optionally, redirect the user to a thank you page
+            // window.location.href = 'thankyou.html';
         } else {
-            console.error('Failed to submit form data');
-            // Optionally, display an error message to the user
+            throw new Error('Failed to send message');
         }
     })
     .catch(error => {
-        console.error('Error submitting form data:', error);
-        // Optionally, display an error message to the user
+        console.error(error);
+        alert('An error occurred while sending the message. Please try again later.');
     });
 });
-
 
 
