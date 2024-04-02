@@ -313,27 +313,41 @@
 }());
 
 document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault();
+    event.preventDefault(); // Prevent the default form submission
 
-    var formData = new FormData(this);
+    // Get form data
+    const name = document.querySelector('#contactForm input[name="name"]').value;
+    const email = document.querySelector('#contactForm input[name="email"]').value;
+    const subject = document.querySelector('#contactForm input[name="subject"]').value;
+    const message = document.querySelector('#message').value;
 
-    fetch('/api/submitForm', {
+    // Send data to AWS Lambda function
+    fetch('https://your-lambda-api-endpoint', {
         method: 'POST',
-        body: formData
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            name: name,
+            email: email,
+            subject: subject,
+            message: message
+        })
     })
     .then(response => {
         if (response.ok) {
-            alert('Message sent successfully!');
-            // Optionally, redirect the user to a thank you page
-            // window.location.href = 'thankyou.html';
+            console.log('Form data submitted successfully');
+            // Optionally, display a success message or redirect the user
         } else {
-            throw new Error('Failed to send message');
+            console.error('Failed to submit form data');
+            // Optionally, display an error message to the user
         }
     })
     .catch(error => {
-        console.error(error);
-        alert('An error occurred while sending the message. Please try again later.');
+        console.error('Error submitting form data:', error);
+        // Optionally, display an error message to the user
     });
 });
+
 
 
