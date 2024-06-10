@@ -337,3 +337,43 @@ document.getElementById('contactForm').addEventListener('submit', function(event
 });
 
 
+
+function showInfo(info) {
+	var infoBox = document.getElementById('info-box');
+	
+	// Map button names to their corresponding information
+	var infoMap = {
+		'MySQL': 'I have managed MySQL databases for projects, proficient in SQL queries and optimizing performance.',
+		'Kafka': 'In my Kafka experience, I have explored event-driven architectures in academic projects, implementing concepts like event sourcing and reactive systems with Kafka.',
+		'MongoDB': 'I have utilized MongoDB for building both REST and GraphQL APIs, favoring its schema-free approach for rapid prototyping. I am proficient with Mongoose for NodeJS and PyMongo for Python.',
+		'Jenkins': 'I have created CI/CD pipelines for an academic project, setting up a Jenkins pipeline to deploy applications ',
+		'C++': 'I have built high-performance software solutions across various domains using C++, mastering object-oriented programming and algorithm design.',
+		'Javascript': 'JavaScript has been instrumental in my work, enabling the creation of dynamic web applications with enhanced interactivity and functionality.',
+		'CSS3': 'I excel in CSS with a deep understanding of the box model, flexbox, grid, and responsive design. I have worked with CSS-in-JS libraries like Styled Components and preprocessors like SASS.',
+		'React': 'In my React experience, I have created dynamic and responsive user interfaces for web applications. I am proficient in building reusable components, managing state, and handling asynchronous data with React ecosystem of tools and libraries.',
+		'Java': 'I am skilled in Java, having worked on multiple projects. I am familiar with Java EE, Spring Boot, Hibernate, and have experience with RESTful web services.',
+		'Python': 'I have advanced skills in Python and have utilized it extensively for various purposes, including backend development, data analysis, and machine learning projects. I am experienced with popular libraries such as NumPy, Pandas, Matplotlib, and Scikit-learn, which are commonly used for numerical computing, data manipulation, visualization, and machine learning tasks, respectively.',
+		
+		'Gen AI': 'In my experience working on an AI-driven healthcare assistant project, I have witnessed the profound impact of Gen AI in personalized healthcare',
+		'Natrurl Language Processing': 'I have NLP experience, having worked on text classification, sentiment analysis, named entity recognition, and text generation projects. I am comfortable with NLTK, spaCy, and Gensim libraries.',
+		'Machine Learning': 'I understand machine learning well and have implemented algorithms for classification, regression, clustering, and reinforcement learning. I am familiar with TensorFlow, PyTorch, and Scikit-learn.',
+		'Docker': 'In Docker, I have containerized applications for efficient deployment and management. I am proficient in creating Docker images, orchestrating containers, and optimizing workflows for development and production environments.',
+		'NumPy': 'NumPy has been my go-to tool for efficient numerical computing tasks. I have excelled in array manipulation, mathematical operations, and data analysis using its extensive functionality, contributing to the success of various projects.',
+		'Boto3': 'Using Boto3, I have integrated AWS services into Python apps, automating tasks and enhancing efficiency.',
+		'HTML5': 'I have crafted web pages and interfaces for numerous projects, utilizing HTML to structure content and create interactive user experiences. I am proficient in semantic HTML5 markup and understand best practices for accessibility and cross-browser compatibility.',
+		'AWS': 'I have utilized AWS to build scalable infrastructures for projects, leveraging services like EC2, S3, RDS, and Lambda for deployment, storage, and automation.',
+		'REST API': 'I have developed REST APIs for seamless communication between clients and servers, ensuring scalability and reliability across diverse platforms.',
+		'PostgreSQL': 'In my PostgreSQL experience, I have used the database extensively beyond academia for building web backends and data warehousing.',
+		'Kubernetes': 'In my Kubernetes experience, I have deployed and managed containerized applications for academic projects, showcasing its capabilities in modern cloud-native development.',
+		'Go': 'I have crafted a video streaming protocol in Go, utilizing its concurrency and performance features to deliver seamless video content.',
+		'Flask': 'In my Flask experience, I have crafted scalable web applications using Python. Leveraging Flasks simplicity, I have built RESTful APIs, microservices, and web services efficiently.',
+		'NodeJs': 'I have leveraged Node.js to develop real-time web applications, RESTful APIs, and microservices. My expertise includes working with popular frameworks like Express.js and integrating with databases like MongoDB and PostgreSQL',
+		
+	};
+	
+	// Update info-box content with button name as heading and corresponding information
+	infoBox.innerHTML = '<h2 class="info-heading">' + info + '</h2><p>' + infoMap[info] + '</p>';
+}
+
+
+

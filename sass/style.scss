@@ -339,7 +339,7 @@ figure {
 }
 
 .container-wrap{
-	max-width: 1170px;
+	max-width: 1570px;
 	margin: 0 auto;
 }
 #colorlib-main {
@@ -473,6 +473,7 @@ figure {
 						color: $brand-black;
 						border: 1px solid $brand-black;
 						background: transparent !important;
+						
 						&:hover{
 							background: transparent !important;
 							border: 1px solid $brand-black !important;

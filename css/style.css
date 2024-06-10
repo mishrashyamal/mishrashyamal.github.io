@@ -15,7 +15,7 @@ body {
   font-family: "Quicksand", Arial, sans-serif;
   font-weight: 400;
   font-size: 15px;
-  line-height: 1.8;
+  line-height: 1.6;
   color: rgba(0, 0, 0, 0.7); }
   @media screen and (max-width: 992px) {
     body {
@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #000;
   font-family: "Playfair Display", Georgia, serif;
   font-weight: 400;
-  margin: 0 0 30px 0; }
+   }
 
 figure {
   margin-bottom: 2.5em;
@@ -223,7 +223,7 @@ figure {
 
 
 #colorlib-main {
-  width: calc(100% - 300px);
+  width: calc(100% - 100px);
   float: right;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
@@ -880,6 +880,8 @@ body.offcanvas {
   width: 100%;
   float: left;
   background: #fff;
+  display: flex;
+ 
   
   margin-bottom: 3em; }
   @media screen and (max-width: 768px) {
@@ -1207,9 +1209,9 @@ body.offcanvas {
     outline: none !important; }
 
 .btn-primary {
-  background: #2c98f0;
-  color: #fff;
-  border: 2px solid #2c98f0; }
+  background: #dfe3f4;
+  color: black;
+  border: 2px solid #dfe3f4; }
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
     background: #44a4f2 !important;
     border-color: #44a4f2 !important; }
@@ -1511,9 +1513,9 @@ body.offcanvas {
 
 
 .customwrap {
-  width: 1100px; /* Adjust the width as needed */
+  width: 1300px; /* Adjust the width as needed */
  
-  margin-left: 80px;
+  
 }
 
 
@@ -1524,23 +1526,29 @@ body.offcanvas {
 }
 
 .customwrap2 {
-  width: 1000px; /* Adjust the width as needed */
+  width: 1250px; /* Adjust the width as needed */
  
   
 }
 
 .customwrap3 {
-  width: 1050px; /* Adjust the width as needed */
+  width: 1300px; /* Adjust the width as needed */
   margin-left: -10px;
   
 }
 
 
 .customwrap4 {
-  width: 1000px; /* Adjust the width as needed */
-  margin-left: 10px;
+  width: 1200px; /* Adjust the width as needed */
+  margin-left: 30px;
   
 }
+
+.customwrap5 {
+  width: 100%; /* Adjust the width as needed */
+  
+}
+
 
 .education-entry {
   background: #f9f9f9;
@@ -1570,4 +1578,163 @@ body.offcanvas {
   font-size: 14px;
   color: #555;
   
+}
+
+
+
+.containerfg {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.containerfg h2 {
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+}
+.form-containergh {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  flex-wrap: wrap;
+}
+.form-group {
+  flex: 1;
+  margin-right: 20px;
+}
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  
+  background-color: #fff9c4;
+  height: 150px;
+  resize: none;
+  font-size: 16px;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+.form-group button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+.form-group button:hover {
+  background-color: #0056b3;
+}
+.contact-info {
+  background-color: rgb(242,243,247);
+  padding: 10px;
+ 
+  font-size: 16px;
+  position: absolute;
+  right: -20px;
+  top: 0;
+  width: 55%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.contact-info a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.containermnb {
+  display: flex;
+  align-items: center;
+ 
+  position: relative; /* Add relative positioning to the container */
+}
+
+.info-box {
+  
+  width: 650px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+ 
+  
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 80px;
+  font-size: 18px;
+  background-color: rgb(249,249,249);
+  transition: background-color 0.3s, transform 0.3s;
+ 
+}
+
+.buttonsmnbe {
+ 
+  display: flex;
+  flex-direction: row-reverse; /* Align buttons from right to left */
+  gap: 10px;
+  position: absolute; /* Position the buttons absolutely */
+ 
+  right: 0; /* Align buttons to the right side of the container */
+  
+  margin-top: 6px; /* Adjust top position of button rows */
+
+}
+.buttonsmnbe1 {
+ 
+  display: flex;
+  flex-direction: row-reverse; /* Align buttons from right to left */
+  gap: 10px;
+  position: absolute; /* Position the buttons absolutely */
+ 
+  right: 0; /* Align buttons to the right side of the container */
+ 
+  margin-top: 120px; /* Adjust top position of button rows */
+
+}
+
+.buttonsmnbe2 {
+ 
+  display: flex;
+  flex-direction: row-reverse; /* Align buttons from right to left */
+  gap: 10px;
+  position: absolute; /* Position the buttons absolutely */
+ 
+  right: 0; /* Align buttons to the right side of the container */
+ 
+  margin-bottom: 120px; /* Adjust top position of button rows */
+
+}
+
+
+
+
+
+.buttonsmnb {
+  padding: 2px 5px;
+  font-size: 14px;
+  cursor: pointer;
+ 
+  background: linear-gradient(45deg, #b4c0f4, #dadef2);
+ 
+  border: none;
+  
+  transition: background-color 0.3s;
+  z-index: 1; /* Ensure the info box is above buttons */
+  border-radius: 5px; /* Add border radius */
+  color: black; /* Set button text color to black */
+  border: 2px solid #d6d6d6; /* Add border */
+
+}
+
+.buttonsmnb:hover {
+  background-color: #2C98F0; /* Change background color on hover */
+  border-color: #a4b3f6; /* Change border color on hover */
+  transform: scale(1.05); /* Add a slight scale effect on hover */
 }
