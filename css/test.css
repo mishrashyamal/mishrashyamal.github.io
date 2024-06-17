@@ -194,13 +194,18 @@ header nav ul li a {
 
 .project-entry {
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   background-color: #f9f9fa;
   margin-bottom: 30px;
   overflow: hidden; /* Ensure content doesn't overflow */
   display: flex;
   position: relative; /* Position for absolute link */
   height: 250px;
+  transition: box-shadow 0.3s ease; /* Smooth transition for box-shadow */
+}
+
+.project-entry:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Increase shadow on hover */
 }
 
 .project-img {
