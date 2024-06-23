@@ -82,27 +82,25 @@
 					<p>Philadelphia, PA-19104</p>
 					<p>+1 267-665-8602</p>
 					<div class="social-icons">
-						<a href="#"><i class="fab fa-facebook-f"></i></a>
-						<a href="#"><i class="fab fa-twitter"></i></a>
-						<a href="#"><i class="fab fa-linkedin-in"></i></a>
-						<a href="#"><i class="fab fa-instagram"></i></a>
+						<a href="https://www.github.com/shyamal11"><i class="fab fa-github"></i></a>
+						<a href="https://x.com/shyamal_mishra1"><i class="fab fa-twitter"></i></a>
+						<a href="https://www.linkedin.com/in/shyamal-mishra/"><i class="fab fa-linkedin-in"></i></a>
+						<a href="https://buymeacoffee.com/shyamal116" target="_blank"><i class="fas fa-coffee"></i> </a>
 					</div>
 				</div>
 				<div class="right-panel">
-					<h1 class="animate-box" data-animate-effect="fadeInLeftBig">Hello !</h1>
-
-					<p>Welcome to my Portfolio Website </p>
-
-					<p class="spaced">
-						I am a dedicated software engineer, committed to devising impactful solutions by infusing
-						creativity and expertise into every project. 
-					</p>
+					<h1 class="animate-box" data-animate-effect="fadeInLeftBig">Hi There ! </h1>
+					<div class="text-container">
+					<p class="spaced animate-box"  data-animate-effect="fadeInLeftBig">Welcome to my  Website. </p>
+				</div>
+				<p>I am into  <span class="typed" id="typed"></span></p>
+					
 					<p>
-						Whether it involves crafting elegant user
-						interfaces or developing sophisticated backend algorithms, I approach each task with enthusiasm
-						and skill.
+						Committed to creating impactful solutions with creativity
+						and expertise. I approach every task, from elegant user interfaces to sophisticated backend
+						algorithms, with enthusiasm . 
 					</p>
-					<div class="buttons animate-box" data-animate-effect="fadeInRight">
+					<div class="buttons animate-box" data-animate-effect="fadeInLeft">
 						<p><a href="https://shyamal11.github.io/portfolio/resume.pdf" target="_blank"
 								class="btn btn-primary btn-learn">Download
 								CV <i class="icon-download4"></i></a></p>
@@ -657,6 +655,7 @@
 	<!-- MAIN JS -->
 	<script src="js/main.js"></script>
 	<script src="js/submitForm.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
 
 	<script>
@@ -675,6 +674,22 @@
 				}
 			});
 		});
+	</script>
+
+
+	<script>
+		// script.js
+document.addEventListener("DOMContentLoaded", function() {
+    new Typed('#typed', {
+        strings: ["Full-Stack Development", "Dynamic Programming", "AI/ML Engineering"],
+        typeSpeed: 50,
+        backSpeed: 25,
+        backDelay: 2000,
+        startDelay: 500,
+        loop: true
+    });
+});
+
 	</script>
 
 </body>
