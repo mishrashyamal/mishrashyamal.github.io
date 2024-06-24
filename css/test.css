@@ -161,7 +161,7 @@ header nav ul li a {
 
 .right-panel h1 {
   margin: 0;
-  font-size: 45px;
+  font-size: 30px;
   color: #333; /* Change color */
    margin-right: auto; /* Center the text */
 }
@@ -315,4 +315,28 @@ margin-top: 20px;
 .typed {
   font-weight: bold;
   color: #3558f7;
+}
+
+.greeting-container {
+  display: flex;
+ 
+  align-items: center;
+}
+
+.waving-hand {
+  width: 40px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 150px; /* Adjust space between text and GIF */
+  animation: fadeOut 1s 5s forwards; /* Combine fadeIn and fadeOut animations */
+}
+
+
+@keyframes fadeOut {
+  0% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+      display: none;
+  }
 }

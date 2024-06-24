@@ -1,0 +1,38 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.greeting-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.animate-box {
+  opacity: 0;
+  animation: fadeInLeftBig 1s forwards;
+}
+
+@keyframes fadeInLeftBig {
+  0% {
+      opacity: 0;
+      transform: translateX(-50px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+.typed {
+  font-weight: bold;
+  color: #007BFF;
+}
+
+img {
+  width: 50px; /* Adjust size as needed */
+  margin-left: 10px; /* Space between text and GIF */
+}
