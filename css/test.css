@@ -65,11 +65,24 @@ header nav ul li a {
 .footer {
   text-align: center;
   padding: 20px;
-  background-color: #f9f9f9;
+  background-color: #757474;
   border-top: 1px solid #ccc;
- 
+  margin-top: 140px;
+
+}
+.position a {
+    color: white; /* Change this to your desired color */
+    text-decoration: none; /* Remove underline from the link */
 }
 
+.footer span {
+  font-size: 14px; /* Example font size */
+  color: white; /* Change text color to white */
+}
+
+.footer svg path {
+  fill: white; /* Change SVG fill color to white */
+} 
 
 
 .left-panel {
