@@ -44,7 +44,7 @@ header nav ul li a {
   align-items: center;
   justify-content: center;
   display: flex;
-  background-image: linear-gradient(to right, rgb(230, 233, 242) 40%, white 30%);
+  background-image: linear-gradient(to right,#dfe3f4 45%, white 20%);
   color: white;
   padding: 50px;
   overflow: hidden;
@@ -73,7 +73,7 @@ header nav ul li a {
 
 
 .left-panel {
-  background-color: #dfe3f4;
+  background-color: rgb(230, 233, 242);
   padding: 40px;
   display: flex;
   flex-direction: column;
@@ -81,15 +81,15 @@ header nav ul li a {
   text-align: center;
   width: 300px;
   height: 430px;
-  background-image: linear-gradient(to bottom, #dfe3f4 90%, white 30%);
+  background-image: linear-gradient(to bottom, rgb(230, 233, 242) 90%, white 30%);
   box-shadow: -5px -5px 20px rgba(0, 0, 0, 0.1),
     /* Top left shadow */
     -5px 5px 20px rgba(0, 0, 0, 0.1);
   /* Bottom left shadow */
   margin-top: 30px;
-  margin-left: 80px;
+  margin-left: 180px;
   transform-style: preserve-3d; /* Preserve 3D transformations */
-  animation: rotateLeftAndRight 1s ease-in; /* Apply flip animation */
+  /*animation: rotateLeftAndRight 1s ease-in; /* Apply flip animation */
 }
 
 @keyframes rotateLeftAndRight {
@@ -113,7 +113,7 @@ header nav ul li a {
 }
 
 .left-panel h2 {
-  margin-top: 30px;
+  margin-top: 15px;
   font-size: 24px;
   color: #333;
   /* Adjust the color of the heading */
@@ -122,7 +122,7 @@ header nav ul li a {
 }
 
 .left-panel p {
-  margin-top: 22px;
+  margin-top: 20px;
   margin-bottom: -10px;
   /* Adjust the top margin */
   font-size: 14px;
@@ -131,8 +131,15 @@ header nav ul li a {
   /* Adjust the color of the paragraph */
 }
 
+.separator {
+  border: none;
+  border-top: 2px solid black;
+  width: 30%;
+  margin: 10px auto;
+}
+
 .left-panel .social-icons {
-  margin-top: 42px;
+  margin-top: 38px;
   /* Adjust the top margin */
 }
 
@@ -232,6 +239,46 @@ header nav ul li a {
  
 }
 
+.fancy-box-item {
+  position: relative;
+ 
+  background-color: #fff;
+  display: flex;
+ 
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.fancy-box-item:before,
+.fancy-box-item:after {
+  content: "";
+  position: absolute;
+  background-color: #bbc6f6;
+  transition: all 0.5s ease;
+}
+
+.fancy-box-item:before {
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 5px;
+}
+
+.fancy-box-item:after {
+  left: 0;
+  bottom: 0;
+  height: 5px;
+  width: 0;
+}
+
+.fancy-box-item:hover:before {
+  height: 100%;
+}
+
+.fancy-box-item:hover:after {
+  width: 100%;
+}
+
 .desc {
   margin-right: .8px;
   flex-grow: 1;
@@ -271,7 +318,9 @@ header nav ul li a {
   align-items: center;
   justify-content: center;
   border-radius: 15px;
-  margin-bottom: 8px; /* Adjusted margin bottom */
+  margin-bottom: 18px; /* Adjusted margin bottom */
+  
+  box-shadow: 0 4px 8px rgba(187, 198, 246, 0.6), 0 6px 20px rgba(187, 198, 246, 0.6);
  
 }
 

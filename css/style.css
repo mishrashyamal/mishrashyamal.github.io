@@ -1662,14 +1662,14 @@ body.offcanvas {
   width: 650px;
   height: 300px;
   border-radius: 10px;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 25px #dfe3f4;
  
   
   padding-top: 20px;
   padding-left: 20px;
   padding-right: 80px;
   font-size: 18px;
-  background-color: rgb(249,249,249);
+  background-color: white;
   transition: background-color 0.3s, transform 0.3s;
  
 }
@@ -1717,11 +1717,29 @@ body.offcanvas {
 
 
 .buttonsmnb {
-  padding: 2px 5px;
-  font-size: 14px;
+  padding: 3px 6px;
+  font-size:  14px;
   cursor: pointer;
  
-  background: linear-gradient(45deg, #b4c0f4, #dadef2);
+ /* background: linear-gradient(45deg, #ff7e5f, #feb47b);*/
+  /*background: linear-gradient(45deg, #6a11cb, #2575fc);*/
+  /*background: linear-gradient(45deg, #43cea2, #185a9d);*/
+  /*background: linear-gradient(45deg, #ffafbd, #ffc3a0);*/
+  /*background: linear-gradient(45deg, #56ccf2, #2f80ed);*/
+  /*background: linear-gradient(45deg, #dfe3f4, #b0bec5);*/
+  /*background: linear-gradient(45deg, #dfe3f4, #9fa8da);*/
+  /*background: linear-gradient(45deg, #dfe3f4, #b3e5fc);*/
+ /* background: linear-gradient(45deg, #dfe3f4, #c5cae9);*/
+  background: linear-gradient(45deg, #dfe3f4, #e1bee7);
+
+
+
+
+
+
+
+  
+
  
   border: none;
   
@@ -1735,6 +1753,6 @@ body.offcanvas {
 
 .buttonsmnb:hover {
   background-color: #2C98F0; /* Change background color on hover */
-  border-color: #a4b3f6; /* Change border color on hover */
+  /* Change border color on hover */
   transform: scale(1.05); /* Add a slight scale effect on hover */
 }
