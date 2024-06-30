@@ -1659,15 +1659,15 @@ body.offcanvas {
 
 .info-box {
   
-  width: 650px;
-  height: 300px;
+  width: 750px;
+  height: 350px;
   border-radius: 10px;
   box-shadow: 0 0 25px #dfe3f4;
  
   
   padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 80px;
+  padding-left: 40px;
+  padding-right: 230px;
   font-size: 18px;
   background-color: white;
   transition: background-color 0.3s, transform 0.3s;
@@ -1717,7 +1717,7 @@ body.offcanvas {
 
 
 .buttonsmnb {
-  padding: 3px 6px;
+  padding: 4px 7px;
   font-size:  14px;
   cursor: pointer;
  
@@ -1732,15 +1732,6 @@ body.offcanvas {
  /* background: linear-gradient(45deg, #dfe3f4, #c5cae9);*/
   background: linear-gradient(45deg, #dfe3f4, #e1bee7);
 
-
-
-
-
-
-
-  
-
- 
   border: none;
   
   transition: background-color 0.3s;
