@@ -125,6 +125,8 @@ header nav ul li a {
   /* Add a subtle shadow to the image */
 }
 
+
+
 .left-panel h2 {
   margin-top: 15px;
   font-size: 24px;
@@ -187,7 +189,7 @@ header nav ul li a {
 }
 
 .right-panel p {
-  font-size: 15px;
+  font-size: 17px;
   color: #666;
   margin-top: 20px; /* Increase top margin */
 }
