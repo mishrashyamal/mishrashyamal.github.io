@@ -44,7 +44,7 @@ header nav ul li a {
   align-items: center;
   justify-content: center;
   display: flex;
-  background-image: linear-gradient(to right,#dfe3f4 45%, white 20%);
+  background-image: linear-gradient(to right,#adcae4 45%, white 20%);
   color: white;
   padding: 50px;
   overflow: hidden;
@@ -86,7 +86,7 @@ header nav ul li a {
 
 
 .left-panel {
-  background-color: rgb(230, 233, 242);
+  background-color: #f4e8c2;
   padding: 40px;
   display: flex;
   flex-direction: column;
@@ -94,7 +94,7 @@ header nav ul li a {
   text-align: center;
   width: 300px;
   height: 430px;
-  background-image: linear-gradient(to bottom, rgb(230, 233, 242) 90%, white 30%);
+  background-image: linear-gradient(to bottom, #a2c3e0 90%, white 30%);
   box-shadow: -5px -5px 20px rgba(0, 0, 0, 0.1),
     /* Top left shadow */
     -5px 5px 20px rgba(0, 0, 0, 0.1);
@@ -378,7 +378,7 @@ margin-top: 20px;
 
 .typed {
   font-weight: bold;
-  color: #3558f7;
+  color: #3680c5;
 }
 
 .greeting-container {
