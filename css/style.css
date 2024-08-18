@@ -36,7 +36,7 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
   color: #000;
-  font-family: "Playfair Display", Georgia, serif;
+ 
   font-weight: 400;
    }
 
@@ -1209,19 +1209,20 @@ body.offcanvas {
     outline: none !important; }
 
 .btn-primary {
-  background: #dfe3f4;
+  background: #f1b355;
   color: black;
-  border: 2px solid #dfe3f4; }
+  border: 2px solid #f1b355; }
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-    background: #44a4f2 !important;
-    border-color: #44a4f2 !important; }
+    background: #164B60 !important;
+    color: white;
+    border-color: #164B60 !important; }
   .btn-primary.btn-outline {
     background: transparent;
     color: #2c98f0;
     border: 2px solid #2c98f0; }
     .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
       background: #2c98f0;
-      color: #fff; }
+      color: black; }
 
 .btn-success {
   background: #5cb85c;
@@ -1535,8 +1536,20 @@ body.offcanvas {
   width: 1300px; /* Adjust the width as needed */
   margin-left: -10px;
   
+ 
+  
 }
 
+.backcolour {
+  background-color: #164B60 ; /* Replace with your desired background color */
+  padding: 20px; /* Add padding around the content */
+  border-radius: 10px; /* Optional: Rounded corners */
+  min-height: 100%; /* Ensure it covers the content */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  
+}
 
 .customwrap4 {
   width: 1200px; /* Adjust the width as needed */
@@ -1662,7 +1675,7 @@ body.offcanvas {
   width: 750px;
   height: 350px;
   border-radius: 10px;
-  box-shadow: 0 0 25px #dfe3f4;
+  box-shadow: 0 0 25px #164B60;
  
   
   padding-top: 20px;
@@ -1672,6 +1685,17 @@ body.offcanvas {
   background-color: white;
   transition: background-color 0.3s, transform 0.3s;
  
+}
+
+.info-box p{
+  
+ color: #164B60;
+ 
+}
+
+.info-box h2{
+  color: #21496d;
+  border-bottom: 30px;
 }
 
 .buttonsmnbe {
@@ -1730,15 +1754,16 @@ body.offcanvas {
   /*background: linear-gradient(45deg, #dfe3f4, #9fa8da);*/
   /*background: linear-gradient(45deg, #dfe3f4, #b3e5fc);*/
  /* background: linear-gradient(45deg, #dfe3f4, #c5cae9);*/
-  background: linear-gradient(45deg, #dfe3f4, #e1bee7);
+ background: linear-gradient(135deg, #0099ff, #003d66);
 
   border: none;
   
   transition: background-color 0.3s;
   z-index: 1; /* Ensure the info box is above buttons */
   border-radius: 5px; /* Add border radius */
-  color: black; /* Set button text color to black */
+  color: #ffffff; /* Set button text color to black */
   border: 2px solid #d6d6d6; /* Add border */
+  font-weight: bold;
 
 }
 

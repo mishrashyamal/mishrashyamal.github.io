@@ -29,22 +29,61 @@ header nav ul {
   display: flex;
 }
 
+/* Basic styles for list items */
 header nav ul li {
+  position: relative; /* Needed for absolute positioning of the pseudo-element */
   margin-right: 20px;
-  
+  padding: 2px 8px; /* Increase padding for better visual effect */
+  border-radius: 15px; /* Rounded corners */
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  border: 2px solid #164B60; /* Initial border color */
 }
 
+/* Pseudo-element for underline effect */
+header nav ul li::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background: transparent; /* Hidden initially */
+  transform: scaleX(0);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+/* Styles for anchor tags within list items */
 header nav ul li a {
-  color: rgb(12, 11, 11);
+  color: black; /* Text color */
   text-decoration: none;
-  
+  display: block; /* Makes the padding affect the link */
+  height: 100%; /* Ensures the link fills the list item */
+  width: 100%; /* Ensures the link fills the list item */
+ 
+}
+
+/* Hover effects */
+header nav ul li:hover {
+  background-color: #164B60; /* Change background color on hover */
+  color: #164B60; /* Change text color on hover */
+  border-color: #164B60; /* Light pink border on hover */
+  transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+header nav ul li:hover::after {
+  background-color: #164B60; /* Light pink underline on hover */
+  transform: scaleX(1); /* Underline effect on hover */
+}
+
+header nav ul li:hover a {
+  color: #ffffff; /* Change text color to white on hover */
 }
 
 .first-section {
   align-items: center;
   justify-content: center;
   display: flex;
-  background-image: linear-gradient(to right,#adcae4 45%, white 20%);
+  background-image: linear-gradient(to right,#164B60 45%, white 20%);
   color: white;
   padding: 50px;
   overflow: hidden;
@@ -65,7 +104,7 @@ header nav ul li a {
 .footer {
   text-align: center;
   padding: 20px;
-  background-color: #757474;
+  background-color: black;
   border-top: 1px solid #ccc;
   margin-top: 140px;
 
@@ -94,7 +133,7 @@ header nav ul li a {
   text-align: center;
   width: 300px;
   height: 430px;
-  background-image: linear-gradient(to bottom, #a2c3e0 90%, white 30%);
+  background-image: linear-gradient(to bottom, #1d5971 90%, white 30%);
   box-shadow: -5px -5px 20px rgba(0, 0, 0, 0.1),
     /* Top left shadow */
     -5px 5px 20px rgba(0, 0, 0, 0.1);
@@ -130,7 +169,7 @@ header nav ul li a {
 .left-panel h2 {
   margin-top: 15px;
   font-size: 24px;
-  color: #333;
+  color: #f4eaea;
   /* Adjust the color of the heading */
   font-weight: bold;
   
@@ -141,7 +180,7 @@ header nav ul li a {
   margin-bottom: -10px;
   /* Adjust the top margin */
   font-size: 14px;
-  color: #555;
+  color: #fbf6f6;
   letter-spacing: 0.5px; /* Adjust the letter spacing as needed */
   /* Adjust the color of the paragraph */
 }
@@ -190,8 +229,9 @@ header nav ul li a {
 
 .right-panel p {
   font-size: 17px;
-  color: #666;
+  color: #111111;
   margin-top: 20px; /* Increase top margin */
+  
 }
 
 .spaced {
@@ -208,10 +248,33 @@ header nav ul li a {
   font-family: "Quicksand", Arial, sans-serif;
   font-weight: bold;
   color: #718af8;
+  margin-bottom: 25px;
 }
 
 
+.recent-project-entry {
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  background-color: #f9f9fa;
+  margin-bottom: 30px;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  height: 250px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease; 
+  margin-top: 20px;
+}
 
+.recent-project-entry:hover {
+  transform: translateY(-10px) rotate(.3deg); /* Slight lift and tilt for a dynamic effect */
+  box-shadow: 
+  -10px 20px 30px rgba(14, 34, 68, 0.8),  /* Dark, deep shadow from top-right */
+  10px -5px 30px rgba(86, 185, 255, 0.9),  /* Bright blue shadow from bottom-left */
+  inset 0 0 30px rgba(255, 150, 150, 0.6), /* Strong inner glow */
+  0px 0px 60px rgba(255, 150, 150, 0.6), /* Bright white outer halo */
+  0 0 10px 5px rgba(255, 150, 150, 0.6), /* Pink glow for additional color contrast */
+  0 0 15px 5px rgba(255, 150, 150, 0.6); /* Warm orange glow for variety */;
+}
 
 
 
@@ -253,6 +316,19 @@ header nav ul li a {
    
  
 }
+
+
+.fancy-box-itemm {
+  position: relative;
+ 
+  background-color: rgb(255, 255, 255);
+  display: flex;
+ 
+  cursor: pointer;
+  overflow: hidden;
+}
+
+
 
 .fancy-box-item {
   position: relative;
@@ -302,7 +378,7 @@ header nav ul li a {
 }
 
 .desc span small {
-  color: #666666;
+  color: #080808;
   font-size: 14px;
  
  
@@ -378,7 +454,7 @@ margin-top: 20px;
 
 .typed {
   font-weight: bold;
-  color: #3680c5;
+  color: #21496d;
 }
 
 .greeting-container {
@@ -404,3 +480,7 @@ margin-top: 20px;
       display: none;
   }
 }
+
+
+
+
