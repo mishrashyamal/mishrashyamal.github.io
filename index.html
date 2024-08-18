@@ -803,6 +803,34 @@
 		});
 	</script>
 
+	<!-- Add this JavaScript to your HTML file or a separate JavaScript file -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const sections = document.querySelectorAll('section'); // Adjust this selector if needed
+  const navLinks = document.querySelectorAll('header nav ul li a');
+
+  window.addEventListener('scroll', () => {
+    let current = '';
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.offsetHeight;
+      if (window.scrollY >= (sectionTop - 50) && window.scrollY < (sectionTop + sectionHeight - 50)) {
+        current = section.getAttribute('id');
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.parentElement.classList.remove('active');
+      if (link.getAttribute('href') === `#${current}`) {
+        link.parentElement.classList.add('active');
+      }
+    });
+  });
+});
+</script>
+
+
 
 	<script>
 		// script.js

@@ -34,7 +34,7 @@ header nav ul li {
   position: relative; /* Needed for absolute positioning of the pseudo-element */
   margin-right: 20px;
   padding: 2px 8px; /* Increase padding for better visual effect */
-  border-radius: 15px; /* Rounded corners */
+  border-radius: 18px; /* Rounded corners */
   transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
   border: 2px solid #164B60; /* Initial border color */
 }
@@ -91,8 +91,12 @@ header nav ul li:hover a {
 }
 
 .highlighted {
-  text-decoration: underline; /* Add underline style */
-  color: #3558f7;
+   /* Add underline style */
+  color: white;
+ 
+  background-color: #164B60;
+  padding: 2px 10px;
+  border-radius: 15px;
 }
 
 .second-section {
