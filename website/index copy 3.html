@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transparent Box with Outer Box</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #250c42; /* Set background color */
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        /* Outer box */
+        .outer-box {
+            padding: 70px;
+            background-color: rgba(255, 255, 255, 0.2); /* Lighter opacity */
+            border-radius: 25px;
+            position: absolute;
+            top: -20px; /* Adjust positioning */
+            left: -320px;
+            width: 300px; /* Slightly larger than inner box */
+            height: 300px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* Soft shadow */
+            z-index: 0;
+        }
+
+        /* Inner transparent box */
+        .transparent-box {
+            top: 40px;
+            padding: 60px;
+            background-color: rgba(19, 5, 33, 0.5);            /* 30% opacity for transparency */
+            color: white;
+            text-align: center;
+            border-radius: 20px;
+            box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2); /* Soft shadow */
+            position: relative;
+            z-index: 1; /* Stack this above outer box */
+            width: 150px; /* Slightly larger than inner box */
+            height: 150px;
+        }
+
+        .content {
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Outer box positioned behind the transparent box -->
+        <div class="outer-box"></div>
+
+        <!-- Main transparent box -->
+        <div class="transparent-box">
+            <div class="content">
+                This is the inner transparent box with some content inside.
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
