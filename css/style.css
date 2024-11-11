@@ -15,7 +15,7 @@ body {
   font-family: "Quicksand", Arial, sans-serif;
   font-weight: 400;
   font-size: 15px;
-  line-height: 1.8;
+  line-height: 1.6;
   color: rgba(0, 0, 0, 0.7); }
   @media screen and (max-width: 992px) {
     body {
@@ -36,9 +36,9 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
   color: #000;
-  font-family: "Playfair Display", Georgia, serif;
+ 
   font-weight: 400;
-  margin: 0 0 30px 0; }
+   }
 
 figure {
   margin-bottom: 2.5em;
@@ -223,7 +223,7 @@ figure {
 
 
 #colorlib-main {
-  width: calc(100% - 300px);
+  width: calc(100% - 100px);
   float: right;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
@@ -420,13 +420,28 @@ body.offcanvas {
     .colorlib-heading {
       margin-bottom: 3em; } }
 
+
+      .colorlib-heading1 {
+        font-size: 18px;
+       
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        line-height: 1.8;
+        position: relative; }
+        .colorlib-heading1 span {
+          display: block; }
+        @media screen and (max-width: 768px) {
+          .colorlib-heading1 {
+            margin-bottom: 1em; } }
+
 .heading-meta {
   margin-bottom: 15px;
   display: block;
-  font-size: 10px;
+  font-size: 12px;
   text-transform: uppercase;
-  color: #999999;
-  font-weight: 500;
+  color: black;
+  font-weight: bold;
   letter-spacing: 5px; }
 
 .about-img {
@@ -865,6 +880,9 @@ body.offcanvas {
   width: 100%;
   float: left;
   background: #fff;
+  display: flex;
+ 
+  
   margin-bottom: 3em; }
   @media screen and (max-width: 768px) {
     .blog-entry {
@@ -874,6 +892,7 @@ body.offcanvas {
     height: 200px; /* Set a fixed height for all images */
     float: left;
     overflow: hidden;
+    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.1);
     position: relative;
     z-index: 1;
     margin-bottom: 25px; }
@@ -1190,19 +1209,20 @@ body.offcanvas {
     outline: none !important; }
 
 .btn-primary {
-  background: #2c98f0;
-  color: #fff;
-  border: 2px solid #2c98f0; }
+  background: #f1b355;
+  color: black;
+  border: 2px solid #f1b355; }
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-    background: #44a4f2 !important;
-    border-color: #44a4f2 !important; }
+    background: #164B60 !important;
+    color: white;
+    border-color: #164B60 !important; }
   .btn-primary.btn-outline {
     background: transparent;
     color: #2c98f0;
     border: 2px solid #2c98f0; }
     .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
       background: #2c98f0;
-      color: #fff; }
+      color: black; }
 
 .btn-success {
   background: #5cb85c;
@@ -1462,19 +1482,42 @@ body.offcanvas {
   font-style: italic;
 }
 
+
 .footer {
-  background-color: #f2f3f7; /* Background color for the footer */
-  color: #fff; /* Text color for the footer */
-  padding: 10px 0; /* Padding for top and bottom */
+  background-color: #fff; /* Background color for the footer */
+  color: #337ab7; /* Text color for the footer */
+  padding: 20px 0; /* Padding for top and bottom */
   text-align: center; /* Align text to the center */
 }
 
 
+.footer a {
+  color: #337ab7;
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+.footer span {
+  margin: 0 10px; /* Adjust the margin for spacing between icons */
+}
+.footer svg {
+  vertical-align: middle;
+}
+
+.footer1 {
+  background-color: #fff; /* Background color for the footer */
+  color: #fff; /* Text color for the footer */
+  padding: 20px 0; /* Padding for top and bottom */
+  text-align: center; /* Align text to the center */
+}
+
 
 .customwrap {
-  width: 1100px; /* Adjust the width as needed */
+  margin-right: 150px;
+  margin-left: 30px;/* Adjust the width as needed */
  
-  margin-left: 80px;
+  
 }
 
 
@@ -1485,7 +1528,291 @@ body.offcanvas {
 }
 
 .customwrap2 {
-  width: 1000px; /* Adjust the width as needed */
+  margin-right: 150px;
+  margin-left: 30px;/* Adjust the width as needed */
  
   
+}
+
+.customwrap2 li{
+  font-family: "Quicksand", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 1.6;
+  color: rgba(0, 0, 0, 0.7);
+ 
+  
+}
+
+.customwrap3 {
+margin-right: 120px;
+margin-left: 20px;
+  
+ 
+  
+}
+
+.customwrap6 {
+  margin-right: 150px;
+  margin-left: 30px;/* Adjust the width as needed */
+
+ 
+  
+}
+
+.backcolour {
+  background: radial-gradient(circle, #A8D1E2, #164B60); /* Replace with your desired background color */
+  padding: 20px; /* Add padding around the content */
+  border-radius: 10px; /* Optional: Rounded corners */
+  min-height: 100%; /* Ensure it covers the content */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  
+}
+
+.customwrap4 {
+  margin-right: 170px;
+  margin-left: 50px;
+  
+}
+
+.customwrap4 p {
+font-weight: bold;
+  
+}
+
+.customwrap5 {
+  width: 100%; /* Adjust the width as needed */
+  
+}
+
+
+.education-entry {
+  background: #f9f9f9;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.education-entry:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.2);
+}
+
+.education-entry h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.school {
+  font-size: 16px;
+  color: #777;
+}
+
+.info {
+  font-size: 14px;
+  color: #555;
+  
+}
+
+
+
+.containerfg {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.containerfg h2 {
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+}
+.form-containergh {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  flex-wrap: wrap;
+}
+.form-group {
+  flex: 1;
+  margin-right: 20px;
+}
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  
+  background-color: #fff9c4;
+  height: 150px;
+  resize: none;
+  font-size: 16px;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+.form-group button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+.form-group button:hover {
+  background-color: #0056b3;
+}
+.contact-info {
+  background-color: rgb(242,243,247);
+  padding: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  position: absolute;
+  right: -20px;
+  top: 0;
+  width: 55%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.contact-info a {
+  color: #007bff;
+  text-decoration: none;
+ 
+}
+
+
+.form-group-container {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    gap: 10px; /* Adjust the space between the input field and button */
+}
+
+
+
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.containermnb {
+  display: flex;
+  align-items: center;
+  color: white;
+ 
+  position: relative; /* Add relative positioning to the container */
+}
+
+.containermnb p{
+ font-weight: bold;
+ font-size: 16px;
+ color: white;
+}
+
+.info-box {
+  width: 650px;
+  height: 300px;
+  border-radius: 17.666px 17.666px 73.609px;
+  box-shadow: 
+    -3px 3px 10px rgba(0, 0, 0, 0.2),         /* Subtle dark shadow for light depth */
+    3px -3px 10px rgba(0, 0, 0, 0.15),        /* Softer dark shadow for contrast */
+    inset 0 0 20px rgba(255, 255, 255, 0.15), /* Light inner glow to soften edges */
+    0 0 15px rgba(0, 92, 122, 0.4);           /* Soft blue shadow for harmony with background */
+
+  padding-top: 20px;
+  padding-left: 40px;
+  padding-right: 230px;
+  font-size: 18px;
+  background: radial-gradient(circle at center, #85a7b5 10%, #22647e 90%);
+}
+
+
+.info-box p{
+  
+ color: white;
+ 
+}
+
+.info-box h2{
+  color: white;
+  border-bottom: 30px;
+}
+
+.buttonsmnbe {
+ 
+  display: flex;
+  flex-direction: row-reverse; /* Align buttons from right to left */
+  gap: 10px;
+  position: absolute; /* Position the buttons absolutely */
+ 
+  right: 0; /* Align buttons to the right side of the container */
+  
+  margin-top: 6px; /* Adjust top position of button rows */
+
+}
+.buttonsmnbe1 {
+ 
+  display: flex;
+  flex-direction: row-reverse; /* Align buttons from right to left */
+  gap: 10px;
+  position: absolute; /* Position the buttons absolutely */
+ 
+  right: 0; /* Align buttons to the right side of the container */
+ 
+  margin-top: 120px; /* Adjust top position of button rows */
+
+}
+
+.buttonsmnbe2 {
+ 
+  display: flex;
+  flex-direction: row-reverse; /* Align buttons from right to left */
+  gap: 10px;
+  position: absolute; /* Position the buttons absolutely */
+ 
+  right: 0; /* Align buttons to the right side of the container */
+ 
+  margin-bottom: 120px; /* Adjust top position of button rows */
+
+}
+
+
+
+
+
+.buttonsmnb {
+  padding: 5px 8px;
+  font-size:  14px;
+  cursor: pointer;
+ 
+ /* background: linear-gradient(45deg, #ff7e5f, #feb47b);*/
+  /*background: linear-gradient(45deg, #6a11cb, #2575fc);*/
+  /*background: linear-gradient(45deg, #43cea2, #185a9d);*/
+  /*background: linear-gradient(45deg, #ffafbd, #ffc3a0);*/
+  /*background: linear-gradient(45deg, #56ccf2, #2f80ed);*/
+  /*background: linear-gradient(45deg, #dfe3f4, #b0bec5);*/
+  /*background: linear-gradient(45deg, #dfe3f4, #9fa8da);*/
+  /*background: linear-gradient(45deg, #dfe3f4, #b3e5fc);*/
+ /* background: linear-gradient(45deg, #dfe3f4, #c5cae9);*/
+ background: linear-gradient(135deg, #7cafbb, #003d66);
+
+  border: none;
+  
+  transition: background-color 0.3s;
+  z-index: 1; /* Ensure the info box is above buttons */
+  border-radius: 5px; /* Add border radius */
+  color: #ffffff; /* Set button text color to black */
+  border: 4px linear-gradient(135deg, #7cafbb, #003d66); /* Add border */
+  font-weight: bold;
+
+}
+
+.buttonsmnb:hover {
+  background-color: #2C98F0; /* Change background color on hover */
+  /* Change border color on hover */
+  transform: scale(1.05); /* Add a slight scale effect on hover */
 }
