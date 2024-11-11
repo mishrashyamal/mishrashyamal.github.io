@@ -248,7 +248,11 @@ header nav ul li:hover a {
 }
 
 .info-heading {
+<<<<<<< HEAD
+  font-size: 20px; /* Adjust the font size as needed */
+=======
   font-size: 18px; /* Adjust the font size as needed */
+>>>>>>> 4c2af91be763b110de3affe07f0809abe781c510
   font-family: "Quicksand", Arial, sans-serif;
   font-weight: bold;
   color: #718af8;
@@ -267,6 +271,10 @@ header nav ul li:hover a {
   height: 250px;
   transition: transform 0.4s ease, box-shadow 0.4s ease; 
   margin-top: 20px;
+<<<<<<< HEAD
+  
+=======
+>>>>>>> 4c2af91be763b110de3affe07f0809abe781c510
 }
 
 .recent-project-entry:hover {
@@ -488,3 +496,12 @@ margin-top: 20px;
 
 
 
+<<<<<<< HEAD
+.full-page-background {
+  background: rgb(250, 254, 255); /* You can replace this with the background color of your choice */
+  height: 100vh; /* Ensures the background covers the full viewport height */
+  margin: 0;
+  padding: 0;
+}
+=======
+>>>>>>> 4c2af91be763b110de3affe07f0809abe781c510

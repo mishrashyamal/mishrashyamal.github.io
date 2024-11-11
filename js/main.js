@@ -352,7 +352,7 @@ function showInfo(info) {
 		'CSS3': 'I excel in CSS with a deep understanding of the box model, flexbox, grid, and responsive design. I have worked with CSS-in-JS libraries like Styled Components and preprocessors like SASS.',
 		'React': 'In my React experience, I have created dynamic and responsive user interfaces for web applications. I am proficient in building reusable components, managing state, and handling asynchronous data with React ecosystem of tools and libraries.',
 		'Java': 'I am skilled in Java, having worked on multiple projects. I am familiar with Java EE, Spring Boot, Hibernate, and have experience with RESTful web services.',
-		'Python': 'I have advanced skills in Python and have utilized it extensively for various purposes, including backend development, data analysis, and machine learning projects. I am experienced with popular libraries such as NumPy, Pandas, Matplotlib, and Scikit-learn, which are commonly used for numerical computing, data manipulation, visualization, and machine learning tasks, respectively.',
+		'Python': 'I possess advanced Python skills and have employed them extensively across different domains, such as backend development, data analysis, and machine learning projects.',
 		
 		'Gen AI': 'In my experience working on an AI-driven healthcare assistant project, I have witnessed the profound impact of Gen AI in personalized healthcare',
 		'Natrurl Language Processing': 'I have NLP experience, having worked on text classification, sentiment analysis, named entity recognition, and text generation projects. I am comfortable with NLTK, spaCy, and Gensim libraries.',
@@ -374,6 +374,5 @@ function showInfo(info) {
 	// Update info-box content with button name as heading and corresponding information
 	infoBox.innerHTML = '<h2 class="info-heading">' + info + '</h2><p>' + infoMap[info] + '</p>';
 }
-
 
 

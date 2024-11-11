@@ -45,6 +45,8 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/test.css">
+	<link rel="stylesheet" href="css/recentproject.css">
+
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 
@@ -57,7 +59,7 @@
 
 </head>
 
-<body>
+<body class="full-page-background">
 	<div id="colorlib-page">
 		<div class="container-wrap">
 			<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar"
@@ -132,12 +134,106 @@
 
 
 
+				<section id="Projects">
+					<div class="customwrap6">
+						<section class="colorlib-blog" data-section="blog">
+							<div class="colorlib-narrow-content">
+								<div class="row">
+									<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+										data-animate-effect="fadeInLeft">
+										<span class="heading-meta">Recent Projects</span>
+										<h2 class="colorlib-heading">Some Things I’ve Built</h2>
+									</div>
+								</div>
 
 
 
 
 
-				<!--	<section id="Projects">
+
+
+
+								<div class="section_recent_project">
+									<div class="picture_recent_project animate-box" data-animate-effect="fadeInLeft">
+									</div>
+
+									<div class="connector" id="connector">
+										<img src="./images/output-onlinegiftools (4).gif" alt="Connecting GIF" id="gif">
+									</div>
+
+									<div class="box_recent_project animate-box" data-animate-effect="fadeInRight">
+										<h2 class="headline_recent_project">InnerBalance Hub</h2>
+										<h5 class="subheadline_recent_project">Full-stack web application</h5>
+										<div class="content_recent_project">
+											<p>A platform equipped with advanced capabilities to assess mental
+												well-being, deliver real-time yoga guidance, and offer personalized
+												assistance through an AI chatbot.</p>
+										</div>
+										<div class="button_container">
+										
+
+											<a href="https://your-live-project-link.com" class="btn_recent_project btn_recent_project-github" target="_blank">
+												<img src="https://media.tenor.com/8OPCLlcaQoMAAAAi/cartoon-xolo.gif" alt="Try Project GIF" class="btn_recent_project-icon">
+												Try Now
+											</a>
+											
+											<a href="https://your-live-demo.com"
+												class="btn_recent_project btn_recent_project-live" target="_blank">
+
+												<span class="line-md--github-loop"></span> <span
+													class="logos--github"></span>
+											</a>
+
+										</div>
+									</div>
+								</div>
+
+
+								<div class="section_new_project">
+									<div class="box_new_project animate-box" data-animate-effect="fadeInLeft">
+										<h2 class="headline_recent_project_new">Another Project</h2>
+										<h5 class="subheadline_recent_project_new">An Innovative Solution</h5>
+										<div class="content_recent_project_new">
+											<p>A platform equipped with advanced capabilities to assess mental
+												well-being, deliver real-time yoga guidance, and offer personalized
+												assistance through an AI chatbot.</p>
+										</div>
+									</div>
+									<div class="button_container_new">
+										<a href="https://github.com/your-repo"
+											class="btn_recent_project btn_recent_project-github" target="_blank">
+											<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+												alt="" class="btn_recent_project-icon">
+											GitHub
+										</a>
+										<a href="https://your-live-demo.com"
+											class="btn_recent_project btn_recent_project-live" target="_blank">
+											<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+												alt="" class="btn_recent_project-icon"> Live
+										</a>
+									</div>
+
+									<div class="picture_new_project animate-box" data-animate-effect="fadeInRight">
+									</div>
+								</div>
+
+							</div>
+						</section>
+
+					</div>
+				</section>
+
+
+
+
+
+
+
+
+
+
+				<!--
+				<section id="Projects">
 					<div class="customwrap3">
 						<section class="colorlib-blog" data-section="blog">
 							<div class="colorlib-narrow-content">
@@ -209,7 +305,7 @@
 						</section>
 
 					</div>
-				</section> -->
+				</section>-->
 
 				<section id="Projects">
 					<div class="customwrap3">
@@ -218,16 +314,25 @@
 								<div class="row">
 									<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
 										data-animate-effect="fadeInLeft">
-										<span class="heading-meta">Recent Projects</span>
-										<h2 class="colorlib-heading">Some Things I’ve Built</h2>
+										<span class="heading-meta">Other Notable Projects</span>
+
 									</div>
 								</div>
+								<div id="category-filters">
+									<button class="filter-btn" onclick="filterProjects('all')">All</button>
+									<button class="filter-btn" onclick="filterProjects('fullstack')">Full Stack</button>
+									<button class="filter-btn" onclick="filterProjects('machinelearning')">Machine
+										Learning</button>
+									<button class="filter-btn" onclick="filterProjects('dataanalyst')">Data
+										Analyst</button>
+								</div>
 
+								<div class="backcolour">
 
+									<div class="row">
 
-								<div class="row">
-									<div class="backcolour">
-										<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+										<div class="col-md-4 col-sm-6 animate-box fullstack"
+											data-animate-effect="fadeInLeft">
 											<div class="recent-project-entry">
 												<div class="fancy-box-itemm" id="target-box">
 													<div class="project-img"><img src="images/pro1.png"
@@ -253,7 +358,8 @@
 												</div>
 											</div>
 										</div>
-										<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInRight">
+										<div class="col-md-4 col-sm-6 animate-box dataanalyst"
+											data-animate-effect="fadeInRight">
 											<div class="recent-project-entry">
 												<div class="fancy-box-itemm" id="target-box">
 													<div class="project-img"><img src="images/pro2.png"
@@ -278,7 +384,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+										<div class="col-md-4 col-sm-6 animate-box " data-animate-effect="fadeInLeft">
 											<div class="recent-project-entry">
 												<div class="fancy-box-itemm" id="target-box">
 													<div class="project-img"><img src="images/pro3.png"
@@ -303,12 +409,12 @@
 												</div>
 											</div>
 										</div>
-									</div>
-								</div>
 
-								<div class="row">
-									<div class="backcolour">
-										<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+									</div>
+
+									<div class="row">
+
+										<div class="col-md-4 col-sm-6 animate-box " data-animate-effect="fadeInLeft">
 											<div class="recent-project-entry">
 												<div class="fancy-box-itemm" id="target-box">
 													<div class="project-img"><img src="images/pro4.png"
@@ -334,7 +440,8 @@
 												</div>
 											</div>
 										</div>
-										<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInRight">
+										<div class="col-md-4 col-sm-6 animate-box fullstack"
+											data-animate-effect="fadeInRight">
 											<div class="recent-project-entry">
 												<div class="fancy-box-itemm" id="target-box">
 													<div class="project-img"><img src="images/pro5.png"
@@ -361,7 +468,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+										<div class="col-md-4 col-sm-6 animate-box " data-animate-effect="fadeInLeft">
 											<div class="recent-project-entry">
 												<div class="fancy-box-itemm" id="target-box">
 													<div class="project-img"><img src="images/pro6.png"
@@ -661,7 +768,7 @@
 											<i class="icon-globe-outline"></i>
 										</div>
 										<div class="colorlib-text">
-											<p>sm4825@drexel.edu</p>
+											<p>mishrashyamal11@gmail.com</p>
 										</div>
 									</div>
 
@@ -695,18 +802,23 @@
 
 													<div class="form-group">
 														<textarea placeholder="Type your message here..."></textarea>
+
 													</div>
 
 													<div class="contact-info">
-														If you are interested in collaborating or discussing a
-														potential
-														work opportunity, please send a note using the form.
+														<p>If you are interested in collaborating or discussing a
+															potential
+															work opportunity, please send a note using the form.</p>
 													</div>
 												</div>
 
-												<div class="form-group">
-													<input type="submit" class="btn btn-primary btn-send-message"
-														value="Send Message">
+												<div class="form-group-container">
+													<input type="email" class="form-control"
+														placeholder="Enter your email address" required>
+													<div class="form-group">
+														<input type="submit" class="btn btn-primary btn-send-message"
+															value="Send Message">
+													</div>
 												</div>
 											</form>
 										</div>
@@ -804,31 +916,31 @@
 	</script>
 
 	<!-- Add this JavaScript to your HTML file or a separate JavaScript file -->
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-  const sections = document.querySelectorAll('section'); // Adjust this selector if needed
-  const navLinks = document.querySelectorAll('header nav ul li a');
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			const sections = document.querySelectorAll('section'); // Adjust this selector if needed
+			const navLinks = document.querySelectorAll('header nav ul li a');
 
-  window.addEventListener('scroll', () => {
-    let current = '';
+			window.addEventListener('scroll', () => {
+				let current = '';
 
-    sections.forEach(section => {
-      const sectionTop = section.offsetTop;
-      const sectionHeight = section.offsetHeight;
-      if (window.scrollY >= (sectionTop - 50) && window.scrollY < (sectionTop + sectionHeight - 50)) {
-        current = section.getAttribute('id');
-      }
-    });
+				sections.forEach(section => {
+					const sectionTop = section.offsetTop;
+					const sectionHeight = section.offsetHeight;
+					if (window.scrollY >= (sectionTop - 50) && window.scrollY < (sectionTop + sectionHeight - 50)) {
+						current = section.getAttribute('id');
+					}
+				});
 
-    navLinks.forEach(link => {
-      link.parentElement.classList.remove('active');
-      if (link.getAttribute('href') === `#${current}`) {
-        link.parentElement.classList.add('active');
-      }
-    });
-  });
-});
-</script>
+				navLinks.forEach(link => {
+					link.parentElement.classList.remove('active');
+					if (link.getAttribute('href') === `#${current}`) {
+						link.parentElement.classList.add('active');
+					}
+				});
+			});
+		});
+	</script>
 
 
 
@@ -875,6 +987,22 @@ document.addEventListener('DOMContentLoaded', () => {
 		};
 
 	</script>
+
+	<script>
+		function filterProjects(category) {
+			var projects = document.querySelectorAll('.animate-box');
+			projects.forEach(function (project) {
+				if (category === 'all') {
+					project.style.display = 'block';
+				} else if (project.classList.contains(category)) {
+					project.style.display = 'block';
+				} else {
+					project.style.display = 'none';
+				}
+			});
+		}
+	</script>
+
 
 </body>
 

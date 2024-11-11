@@ -438,10 +438,10 @@ body.offcanvas {
 .heading-meta {
   margin-bottom: 15px;
   display: block;
-  font-size: 10px;
+  font-size: 12px;
   text-transform: uppercase;
-  color: #999999;
-  font-weight: 500;
+  color: black;
+  font-weight: bold;
   letter-spacing: 5px; }
 
 .about-img {
@@ -1514,7 +1514,8 @@ body.offcanvas {
 
 
 .customwrap {
-  width: 1300px; /* Adjust the width as needed */
+  margin-right: 150px;
+  margin-left: 30px;/* Adjust the width as needed */
  
   
 }
@@ -1527,21 +1528,40 @@ body.offcanvas {
 }
 
 .customwrap2 {
-  width: 1250px; /* Adjust the width as needed */
+  margin-right: 150px;
+  margin-left: 30px;/* Adjust the width as needed */
+ 
+  
+}
+
+.customwrap2 li{
+  font-family: "Quicksand", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 1.6;
+  color: rgba(0, 0, 0, 0.7);
  
   
 }
 
 .customwrap3 {
-  width: 1300px; /* Adjust the width as needed */
-  margin-left: -10px;
+margin-right: 120px;
+margin-left: 20px;
   
  
   
 }
 
+.customwrap6 {
+  margin-right: 150px;
+  margin-left: 30px;/* Adjust the width as needed */
+
+ 
+  
+}
+
 .backcolour {
-  background-color: #164B60 ; /* Replace with your desired background color */
+  background: radial-gradient(circle, #A8D1E2, #164B60); /* Replace with your desired background color */
   padding: 20px; /* Add padding around the content */
   border-radius: 10px; /* Optional: Rounded corners */
   min-height: 100%; /* Ensure it covers the content */
@@ -1552,8 +1572,13 @@ body.offcanvas {
 }
 
 .customwrap4 {
-  width: 1200px; /* Adjust the width as needed */
-  margin-left: 30px;
+  margin-right: 170px;
+  margin-left: 50px;
+  
+}
+
+.customwrap4 p {
+font-weight: bold;
   
 }
 
@@ -1646,8 +1671,8 @@ body.offcanvas {
 .contact-info {
   background-color: rgb(242,243,247);
   padding: 10px;
- 
-  font-size: 16px;
+  font-weight: bold;
+  font-size: 14px;
   position: absolute;
   right: -20px;
   top: 0;
@@ -1657,8 +1682,19 @@ body.offcanvas {
 .contact-info a {
   color: #007bff;
   text-decoration: none;
-  font-weight: bold;
+ 
 }
+
+
+.form-group-container {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    gap: 10px; /* Adjust the space between the input field and button */
+}
+
+
+
+
 .contact-info a:hover {
   text-decoration: underline;
 }
@@ -1666,35 +1702,43 @@ body.offcanvas {
 .containermnb {
   display: flex;
   align-items: center;
+  color: white;
  
   position: relative; /* Add relative positioning to the container */
 }
 
+.containermnb p{
+ font-weight: bold;
+ font-size: 16px;
+ color: white;
+}
+
 .info-box {
-  
-  width: 750px;
-  height: 350px;
-  border-radius: 10px;
-  box-shadow: 0 0 25px #164B60;
- 
-  
+  width: 650px;
+  height: 300px;
+  border-radius: 17.666px 17.666px 73.609px;
+  box-shadow: 
+    -3px 3px 10px rgba(0, 0, 0, 0.2),         /* Subtle dark shadow for light depth */
+    3px -3px 10px rgba(0, 0, 0, 0.15),        /* Softer dark shadow for contrast */
+    inset 0 0 20px rgba(255, 255, 255, 0.15), /* Light inner glow to soften edges */
+    0 0 15px rgba(0, 92, 122, 0.4);           /* Soft blue shadow for harmony with background */
+
   padding-top: 20px;
   padding-left: 40px;
   padding-right: 230px;
   font-size: 18px;
-  background-color: white;
-  transition: background-color 0.3s, transform 0.3s;
- 
+  background: radial-gradient(circle at center, #85a7b5 10%, #22647e 90%);
 }
+
 
 .info-box p{
   
- color: #164B60;
+ color: white;
  
 }
 
 .info-box h2{
-  color: #21496d;
+  color: white;
   border-bottom: 30px;
 }
 
@@ -1741,7 +1785,7 @@ body.offcanvas {
 
 
 .buttonsmnb {
-  padding: 4px 7px;
+  padding: 5px 8px;
   font-size:  14px;
   cursor: pointer;
  
@@ -1754,7 +1798,7 @@ body.offcanvas {
   /*background: linear-gradient(45deg, #dfe3f4, #9fa8da);*/
   /*background: linear-gradient(45deg, #dfe3f4, #b3e5fc);*/
  /* background: linear-gradient(45deg, #dfe3f4, #c5cae9);*/
- background: linear-gradient(135deg, #0099ff, #003d66);
+ background: linear-gradient(135deg, #7cafbb, #003d66);
 
   border: none;
   
@@ -1762,7 +1806,7 @@ body.offcanvas {
   z-index: 1; /* Ensure the info box is above buttons */
   border-radius: 5px; /* Add border radius */
   color: #ffffff; /* Set button text color to black */
-  border: 2px solid #d6d6d6; /* Add border */
+  border: 4px linear-gradient(135deg, #7cafbb, #003d66); /* Add border */
   font-weight: bold;
 
 }
