@@ -1798,7 +1798,7 @@ font-weight: bold;
   /*background: linear-gradient(45deg, #dfe3f4, #9fa8da);*/
   /*background: linear-gradient(45deg, #dfe3f4, #b3e5fc);*/
  /* background: linear-gradient(45deg, #dfe3f4, #c5cae9);*/
- background: linear-gradient(135deg, #7cafbb, #003d66);
+ background: linear-gradient(135deg, rgb(74, 156, 175), rgb(0, 61, 102));
 
   border: none;
   
