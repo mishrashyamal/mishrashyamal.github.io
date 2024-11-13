@@ -1,18 +1,35 @@
 .section_recent_project {
   position: relative;
   display: flex;
-  align-items: flex-start; /* Aligns items at the top */
-  /* Ensure elements are spaced evenly */
- /* Adjust gap size between picture and box */
+  align-items: center; 
   margin-bottom: 65px;
- margin-left: 30px;
-  max-width: 1100px;
-  gap: 30px;
+ 
+
+
+  
 }
 
 .picture_recent_project {
-  width: 550px;
-  height: 350px;
+  width: 600px;
+  height: 400px;
+  background-image: url('../images/pro54.png'); /* Replace with your picture URL */
+  background-size: cover;
+  background-position: center;
+  box-shadow: 
+    -10px 20px 25px rgba(38, 72, 132, 0.4),  /* Less scattered, soft dark shadow */
+    10px -6px 25px rgba(86, 185, 255, 0.5),  /* Reduced blue shadow for subtlety */
+    inset 0 0 20px rgba(255, 195, 195, 0.3), /* More contained inner glow */
+    12px 12px 35px rgba(255, 150, 150, 0.5), /* Slightly reduced outer glow */
+    0 0 12px 5px rgba(255, 150, 150, 0.4),   /* Reduced pink glow */
+    0 0 15px 5px rgba(255, 150, 150, 0.4);   /* Less scattered orange glow */
+  margin-left: 0; /* Remove margin-left to let gap control spacing */
+  border-radius: 17.666px 17.666px 73.609px;
+  z-index: 1;
+}
+
+.picture_recent_project2 {
+  width: 600px;
+  height: 400px;
   background-image: url('../images/DALL·E 2024-09-08 23.11.13 - A meditating figure in a lotus position with glowing chakras aligned from root to crown, surrounded by radiant auras for each chakra color. Energy flo.webp'); /* Replace with your picture URL */
   background-size: cover;
   background-position: center;
@@ -28,19 +45,34 @@
   z-index: 1;
 }
 
+
+
+
+
+
 .box_recent_project {
   position: relative; /* Keep it relative */
-  width: 450px;
+  width: 600px;
+  height: 300px;
   padding: 20px;
+  padding-left: 70px;
   background-color: rgba(255, 255, 255, 0.9); /* Slightly more opaque */
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
-  border-radius: 50px 25px 50px 25px;
+  border-radius: 0px 25px 50px 2px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin: 0; /* Remove auto margin to avoid conflict with flexbox */
+  left:-50px;
+  top:45px;
   
 }
+
+
+
+
+
+
 
 /* Responsive layout for smaller screens */
 @media (max-width: 768px) {
@@ -93,7 +125,7 @@
 
   display: flex;
   align-items: center;
-  background-color: #007bff;
+ 
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -174,12 +206,17 @@
 .section_new_project {
   display: flex;
   position: relative; /* Container for absolute positioning */
-  margin: 0 auto;
-  margin-bottom: 400px; /* Adjust spacing below the section if needed */
+ 
+  margin-bottom: 50px; /* Adjust spacing below the section if needed */
+  align-items: flex-end;
+  
+ 
 }
 
+
+
 .picture_new_project {
-  width: 500px;
+  width: 550px;
   height: 350px;
   background-image: url('../images/DALL·E 2024-09-08 23.11.13 - A meditating figure in a lotus position with glowing chakras aligned from root to crown, surrounded by radiant auras for each chakra color. Energy flo.webp'); /* Replace with your picture URL */
   background-size: cover;
@@ -196,8 +233,8 @@
   0 0 12px 5px rgba(255, 150, 150, 0.4),   /* Reduced pink glow */
   0 0 15px 5px rgba(255, 150, 150, 0.4);   /* Less scattered orange glow */
 
-  margin-right: 50px;
-  border-radius: 17.666px 17.666px 73.609px;
+
+  border-radius: 17.666px  17.666px 17.666px  73.609px   ;
 
 
 }

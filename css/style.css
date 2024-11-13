@@ -1514,8 +1514,8 @@ body.offcanvas {
 
 
 .customwrap {
-  margin-right: 150px;
-  margin-left: 30px;/* Adjust the width as needed */
+  margin-right: 110px;
+ 
  
   
 }
@@ -1528,8 +1528,8 @@ body.offcanvas {
 }
 
 .customwrap2 {
-  margin-right: 150px;
-  margin-left: 30px;/* Adjust the width as needed */
+  margin-right: 100px;
+ 
  
   
 }
@@ -1545,20 +1545,14 @@ body.offcanvas {
 }
 
 .customwrap3 {
-margin-right: 120px;
-margin-left: 20px;
-  
- 
-  
+margin-right: 100px;
+
 }
 
-.customwrap6 {
-  margin-right: 150px;
-  margin-left: 30px;/* Adjust the width as needed */
 
- 
   
-}
+
+
 
 .backcolour {
   background: radial-gradient(circle, #A8D1E2, #164B60); /* Replace with your desired background color */
